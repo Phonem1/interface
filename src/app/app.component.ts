@@ -1,10 +1,18 @@
 import { Component } from '@angular/core';
+import { TweetComponent } from './tweet/tweet.component';
+import { TweetService } from './tweet.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    selector: 'my-app',
+    templateUrl: './app.component.html' ,
+    styleUrls: ['./app.component.css'],
+    providers: [TweetService]
 })
+
 export class AppComponent {
-  title = 'app';
+    tweets: any[];
+
+    constructor(TweetService: TweetService) {
+        this.tweets = TweetService.getTweets();
+    }
 }

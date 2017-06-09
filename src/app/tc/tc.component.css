@@ -1,0 +1,12 @@
+.fa-file-text-o {     
+  color: #ccc;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid grey;
+}
+
+.highlighted {
+  color: black;
+  border: 2px solid black;
+}
+
