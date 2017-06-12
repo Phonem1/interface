@@ -1,5 +1,5 @@
 .custom-icon {
-  font-size: 60px;
+  font-size: 50px;
   background: #fff;  
   padding: 25px;
   -webkit-border-radius: 1100%;
@@ -12,8 +12,8 @@
   text-align: center;
   display: table-cell;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   -moz-transition: .5s;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -32,7 +32,7 @@
 .icon-wrapper {
   display: inline-block;
   /*padding: 0 5px;*/
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .fixedfill {
@@ -65,8 +65,7 @@
   top: 50%;
   left: 0; 
   border-top: 1px solid black;
-  background: black;
-  
+  background: black;  
   transform: translateY(-50%);
 }
 
