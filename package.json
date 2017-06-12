@@ -4,7 +4,8 @@
   "license": "MIT",
   "main" : "main.js",
   "scripts": {
-    "electron": "\"npm run build \" && electron .",
+    "simple": "\"npm run build \" && electron .",
+    "electron" : "electron .",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
