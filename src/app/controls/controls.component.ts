@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-controls',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./controls.component.css']
 })
 export class ControlsComponent implements OnInit {
+  @Input() mtitle = "Something is not right here yet";
 
   constructor() { console.log("testing");}
 
