@@ -2,15 +2,17 @@
   height: 100px;
   width: 100%;
   padding: 10px 0;
+  display: inline-block;
 }
 
 .btn-circle.btn-lg {
   width: 80px;
-  height: 80px;
-  padding: 0 auto;
-  font-size: 50px;
+  height: 80px;  
+  padding: auto auto; 
+  font-size: 3em;
   line-height: 0;
   border-radius: 50px;
+  
   border: none;
   outline: none;
 }
@@ -20,8 +22,8 @@
   background: #111;
 }
 
-.floatcenter p {
-  padding-top: 25px;
+.middletext {
+  padding-top: 25px;   
   font-size: 1.5em;
 }
  /* PULSE */

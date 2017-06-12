@@ -51,7 +51,8 @@
   background-repeat: repeat-x;
 }
 
-.wrap {    
+.wrap { 
+  width: 100%;     
   text-align: center;    
   position: relative;  
 }
