@@ -13,12 +13,25 @@ import { TcComponent } from './tc/tc.component';
 import { TickComponent } from './tick/tick.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ControlsComponent } from './controls/controls.component';
+import { SurfaceWelcomeComponent } from './surfacewelcome/surfacewelcome.component';
 
 
 
 @NgModule({
   declarations: [    
-    AppComponent, LikeComponent, TweetComponent, TweetsComponent, ZippyComponent, HomeComponent, UserComponent, PhotoComponent, TcComponent, TickComponent, NavbarComponent, ControlsComponent
+    AppComponent, 
+    LikeComponent, 
+    TweetComponent, 
+    TweetsComponent, 
+    ZippyComponent, 
+    HomeComponent, 
+    UserComponent, 
+    PhotoComponent, 
+    TcComponent, 
+    TickComponent, 
+    NavbarComponent,
+    ControlsComponent, 
+    SurfaceWelcomeComponent
   ],
   imports: [
     BrowserModule

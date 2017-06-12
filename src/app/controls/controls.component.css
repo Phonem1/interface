@@ -1,50 +1,61 @@
-    .div-content {      
-      width: 100%;
-      padding: 5px;
-    }
+.div-content {
+  height: 100px;
+  width: 100%;
+  padding: 10px 0;
+}
 
-    .div-inner {
-      display: inline-block;
-    }
+.btn-circle.btn-lg {
+  width: 80px;
+  height: 80px;
+  padding: 0 auto;
+  font-size: 50px;
+  line-height: 0;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+}
 
-    .btn-circle.btn-lg {
-      width: 80px;
-      height: 80px;
-      padding: 0 auto;
-      font-size: 50px;
-      line-height: 0;
-      border-radius: 50px;
-      border: none;
-      outline: none;
-    }
+.btn-circle:active {
+  color: #fff;
+  background: #111;
+}
 
-    .btn-circle:active {
-      background: #111;
-    }
+.floatcenter p {
+  padding-top: 25px;
+  font-size: 1.5em;
+}
+ /* PULSE */
+@keyframes pulse {
+  0% {
+    transform: scale(1.1)
+  }
+  50% {
+    transform: scale(0.8)
+  }
+  100% {
+    transform: scale(1.1)
+  }
+}
 
-    .floatcenter {      
-      width: 85%;
-      /*margin: 0 auto;*/
-      padding: 0 auto;
-      text-align: center;
-      float: center;
-    }
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover>.faa-pulse {
+  animation: pulse 2s linear infinite;
+}
 
-    .floatcenter p {
-      padding-top: 25px;
-      font-size: 20px;      
-    }
+.faa-pulse.animated.faa-fast,
+.faa-pulse.animated-hover.faa-fast:hover,
+.faa-parent.animated-hover:hover>.faa-pulse.faa-fast {
+  animation: pulse 1s linear infinite;
+}
 
-    .floatleft {
-      padding-left: 5px;
-      float: left;
-    }
-
-    .floatright {
-      float: right;
-    }
-    /* HORIZONTAL */
-
+.faa-pulse.animated.faa-slow,
+.faa-pulse.animated-hover.faa-slow:hover,
+.faa-parent.animated-hover:hover>.faa-pulse.faa-slow {
+  animation: pulse 3s linear infinite;
+}
+/*Horizontal*/
+/*
     @keyframes horizontal {
       0% {
         transform: translate(0, 0)
@@ -87,34 +98,8 @@
     .faa-parent.animated-hover:hover>.faa-horizontal.faa-slow {
       animation: horizontal 3s ease infinite;
     }
-    /* PULSE */
+*/   
 
-    @keyframes pulse {
-      0% {
-        transform: scale(1.1)
-      }
-      50% {
-        transform: scale(0.8)
-      }
-      100% {
-        transform: scale(1.1)
-      }
-    }
 
-    .faa-pulse.animated,
-    .faa-pulse.animated-hover:hover,
-    .faa-parent.animated-hover:hover>.faa-pulse {
-      animation: pulse 2s linear infinite;
-    }
 
-    .faa-pulse.animated.faa-fast,
-    .faa-pulse.animated-hover.faa-fast:hover,
-    .faa-parent.animated-hover:hover>.faa-pulse.faa-fast {
-      animation: pulse 1s linear infinite;
-    }
 
-    .faa-pulse.animated.faa-slow,
-    .faa-pulse.animated-hover.faa-slow:hover,
-    .faa-parent.animated-hover:hover>.faa-pulse.faa-slow {
-      animation: pulse 3s linear infinite;
-    }
