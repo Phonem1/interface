@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs/Subscription';
+import { GlobalGeneralService } from '../utilities/globalgeneral.service';
 
 @Component({
   selector: 'wizard-navbar',
@@ -6,47 +8,59 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-   @Input() private data : any[] = [
+  private data : any[] = [
      {mHome : null},
      {mUser : null},
      {mCamera : null},
      {mTc : null},
      {mTick : null}
    ];
-  constructor() {     
+
+  private ssp:Subscription;
+  constructor(private ggs:GlobalGeneralService) {     
     
   }
-  ngOnInit() {     
-    console.log("Init Navbar is started!");  
-    this.ChangeState(0);
+  ngOnInit() {         
+    this.changeState(0);
+    this.ssp = this.ggs.notifyObservable$.subscribe((res)=>{
+      this.changeState(Number(res));
+    })
+    
+  }
+
+  ngOnDistory(){
+    this.ssp.unsubscribe();
   }
 
   onHomeClick() {
-    this.ChangeState(0);
+    this.changeState(0);
   }
 
   onUserClick() {
-    this.ChangeState(1);
+    this.changeState(1);
   }
 
   onCameraClick() {
-    this.ChangeState(2);
+    this.changeState(2);
   }
 
   onTcClick() {
-    this.ChangeState(3);
+    this.changeState(3);
   }
 
   onTickClick() {
-    this.ChangeState(4);
+    this.changeState(4);
   }
 
-  ChangeState(position:number){
+  changeState(position:number){
     var val;
     for(val in this.data){
       (val > position || val < position) ? this.data[val] = false : this.data[val] = true;      
     }
   }
+
+ 
+    
 
   
 

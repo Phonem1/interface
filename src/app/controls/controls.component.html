@@ -8,9 +8,9 @@
 <div row class="div-content">
   <div class="col-sm-1 text-left">
     <div class="previous">
-      <button type="button" class="btn btn-default btn-circle btn-lg">
+      <button type="button" class="btn btn-default btn-circle btn-lg" (click)="onClickLast()">
               <span class="fa fa-chevron-left faa-pulse animated"></span>
-          </button>
+      </button>
     </div>
   </div>
 
@@ -20,9 +20,9 @@
 
   <div class="col-sm-1 text-right">
     <div class="next">
-      <button type="button" class="btn btn-default btn-circle btn-lg">
+      <button type="button" class="btn btn-default btn-circle btn-lg" (click)="onClickNext()">
               <span class="fa fa-chevron-right faa-pulse animated"></span>
-          </button>
+      </button>
     </div>
   </div>
 </div>

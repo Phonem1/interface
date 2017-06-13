@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { GlobalGeneralService } from '../utilities/globalgeneral.service';
 
 @Component({
   selector: 'app-controls',
@@ -7,11 +8,24 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ControlsComponent implements OnInit {
   @Input() mtitle = "Something is not right here yet";
-
-  constructor() { console.log("testing");}
+  private counter = 0;
+  constructor(private ggs: GlobalGeneralService) { console.log("testing");}
 
   ngOnInit() {
     console.log("Control is started");
+  }
+  onClickNext(){    
+    (this.counter < 4) ? this.counter++ : 0;
+    this.ggs.notifyNavBar(this.counter.toString());
+    this.updateTitle(this.counter);
+  }
+  onClickLast(){    
+    (this.counter > 0) ? this.counter-- : this.counter = 0;
+    this.ggs.notifyNavBar(this.counter.toString());
+    this.updateTitle(this.counter);
+  }
+  updateTitle(value : number){
+    this.mtitle = "Current Number is " + value.toString();
   }
 
 }

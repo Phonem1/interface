@@ -1,0 +1,45 @@
+[
+    {
+        "index" : "0",
+        "name":"home",
+        "group":"1",
+        "pages" : "1",
+        "current": true
+    },
+    {
+        "index" : "1",
+        "name":"info",
+        "group":"2",
+        "pages" : "1",
+        "current": false
+    },
+    {
+        "index" : "2",
+        "name":"host",
+        "group":"2",
+        "pages" : "1",
+        "current": false
+    },
+    {
+        "index" : "3",
+        "name":"photo",
+        "group":"3",
+        "pages" : "1",
+        "current": false
+    },
+    {
+        "index" : "4",
+        "name":"policy",
+        "group":"4",
+        "pages" : "3",
+        "current": false
+    },
+    {
+        "index" : "5",
+        "name":"confirm",
+        "group":"5",
+        "pages" : "1",
+        "current": false
+    }
+
+]
