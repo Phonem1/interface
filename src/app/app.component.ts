@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy,Input ,Output } from '@angular/core';
-
 import { TweetComponent } from './tweet/tweet.component';
 import { GlobalGeneralService } from './utilities/globalgeneral.service';
 import { Custom } from './utilities/globalmodel';
@@ -8,23 +7,20 @@ import { Custom } from './utilities/globalmodel';
     selector: 'my-app',
     templateUrl: './app.component.html' ,
     styleUrls: ['./app.component.css'],    
-    providers: [ GlobalGeneralService]
+    providers: [ GlobalGeneralService ]
 })
 
 export class AppComponent implements OnInit, OnDestroy {
-    private req:any;
-    private mymodel:[Custom];
+   
+    private customs: Custom[];
+    private data: any;
 
     constructor(private ggs:GlobalGeneralService) {           
-       
+       this.ggs.getPrimaryData().subscribe(customs => this.customs =customs);
     }
-    ngOnInit(){         
-         this.req = this.ggs.getPrimaryData().subscribe((data)=>{            
-             this.mymodel=data;
-        })
-        console.log(JSON.stringify(this.mymodel));
+    ngOnInit(){   
+        
     }
-    ngOnDestroy(){
-     
+    ngOnDestroy(){        
     }
 }

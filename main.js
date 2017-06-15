@@ -17,7 +17,7 @@ if (process.mas) app.setName('MyAngular')
 // be closed automatically when the JavaScript object is garbage collected.
 var mainWindow = null
 
-const menu = new Menu()
+let menu = new Menu();
 menu.append(new MenuItem({
   label: '768x838',
   click() {

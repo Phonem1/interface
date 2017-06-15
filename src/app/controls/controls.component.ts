@@ -7,12 +7,11 @@ import { GlobalGeneralService } from '../utilities/globalgeneral.service';
   styleUrls: ['./controls.component.css']
 })
 export class ControlsComponent implements OnInit {
-  @Input() mtitle = "Something is not right here yet";
+  @Input() mtitle = "Loading!";
   private counter = 0;
-  constructor(private ggs: GlobalGeneralService) { console.log("testing");}
+  constructor(private ggs: GlobalGeneralService) { }
 
-  ngOnInit() {
-    console.log("Control is started");
+  ngOnInit() {    
   }
   onClickNext(){    
     (this.counter < 4) ? this.counter++ : 0;
