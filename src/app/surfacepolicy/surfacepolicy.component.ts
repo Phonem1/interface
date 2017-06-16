@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './surfacepolicy.component.html',
   styleUrls: ['./surfacepolicy.component.css']
 })
-export class SurfacepolicyComponent implements OnInit {
+export class SurfacePolicyComponent implements OnInit {
 
   constructor() { }
 

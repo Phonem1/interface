@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './surfaceinfo.component.html',
   styleUrls: ['./surfaceinfo.component.css']
 })
-export class SurfaceinfoComponent implements OnInit {
+export class SurfaceInfoComponent implements OnInit {
 
   constructor() { }
 

@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './surfacephoto.component.html',
   styleUrls: ['./surfacephoto.component.css']
 })
-export class SurfacephotoComponent implements OnInit {
+export class SurfacePhotoComponent implements OnInit {
 
   constructor() { }
 

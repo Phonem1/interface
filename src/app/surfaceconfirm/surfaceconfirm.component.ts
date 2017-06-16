@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './surfaceconfirm.component.html',
   styleUrls: ['./surfaceconfirm.component.css']
 })
-export class SurfaceconfirmComponent implements OnInit {
+export class SurfaceConfirmComponent implements OnInit {
 
   constructor() { }
 

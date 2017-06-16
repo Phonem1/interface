@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './surfacehost.component.html',
   styleUrls: ['./surfacehost.component.css']
 })
-export class SurfacehostComponent implements OnInit {
+export class SurfaceHostComponent implements OnInit {
 
   constructor() { }
 
