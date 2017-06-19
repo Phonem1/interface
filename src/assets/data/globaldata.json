@@ -3,7 +3,7 @@
         "index" : "0",
         "name":"home",
         "question":"Welcome",
-        "group":"1",
+        "group":"0",
         "pages" : "1",
         "current": true
     },
@@ -11,7 +11,7 @@
         "index" : "1",
         "name":"info",
         "question":"enter your information",
-        "group":"2",
+        "group":"1",
         "pages" : "1",
         "current": false
     },
@@ -19,7 +19,7 @@
         "index" : "2",
         "name":"host",
         "question":"who are you visiting?",
-        "group":"2",
+        "group":"1",
         "pages" : "1",
         "current": false
     },
@@ -27,7 +27,7 @@
         "index" : "3",
         "name":"photo",
         "question":"take a photo",
-        "group":"3",
+        "group":"2",
         "pages" : "1",
         "current": false
     },
@@ -35,15 +35,15 @@
         "index" : "4",
         "name":"policy",
         "question":"visitor policy",
-        "group":"4",
-        "pages" : "3",
+        "group":"3",
+        "pages" : "1",
         "current": false
     },
     {
         "index" : "5",
         "name":"confirm",
         "question":"confirmation",
-        "group":"5",
+        "group":"4",
         "pages" : "1",
         "current": false
     }

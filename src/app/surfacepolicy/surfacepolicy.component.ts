@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalGeneralService } from '../utilities/globalgeneral.service';
 
 @Component({
   selector: 'app-surfacepolicy',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SurfacePolicyComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ggs: GlobalGeneralService) { }
 
   ngOnInit() {
+    this.ggs.notifyNavBar('3');
   }
 
 }

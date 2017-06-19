@@ -38,6 +38,7 @@
     "@angular/language-service": "^4.0.0",
     "@types/jasmine": "2.5.45",
     "@types/node": "~6.0.60",
+    "ack-angular-webcam": "^1.2.10",
     "codelyzer": "~3.0.1",
     "electron": "^1.6.10",
     "jasmine-core": "~2.6.2",

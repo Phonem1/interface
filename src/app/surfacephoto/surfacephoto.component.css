@@ -1,0 +1,29 @@
+.cssWebCam {
+  padding: 60px 0px;
+  width: 480px;
+  height: 480px;
+}
+
+.btn-circle.btn-xl {
+  margin: 10px 0px;
+  width: 150px;
+  height: 150px;
+  padding: 0px 10px;
+  font-size: 24px;
+  line-height: 1.33em;
+  background: grey;
+  border-radius: 100px;
+}
+
+.buttonRescale {
+  width: 150px;
+  height: 150px;
+  font-size: 24px;
+  line-height: 1em;
+  border-radius: 100px;
+}
+
+.table td, .borderless th {
+  text-align: center;
+  border: none;
+}

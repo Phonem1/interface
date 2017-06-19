@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalGeneralService } from '../utilities/globalgeneral.service';
 
 @Component({
   selector: 'app-surfacewelcome',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SurfaceWelcomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ggs: GlobalGeneralService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {this.ggs.notifyNavBar('0');}
 
 }

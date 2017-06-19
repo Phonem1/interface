@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgModule } from '@angular/core';
 import { UIRouterModule } from '@uirouter/angular';
+import { WebCamComponent } from 'ack-angular-webcam';
 
 import { LikeComponent } from './like/like.component';
 import { TweetComponent } from './tweet/tweet.component';
@@ -54,7 +55,8 @@ import { UIRouterConfigFn } from './utilities/router.config';
     SurfaceHostComponent, 
     SurfacePhotoComponent, 
     SurfacePolicyComponent, 
-    SurfaceConfirmComponent
+    SurfaceConfirmComponent,
+    WebCamComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,32 @@
 <div class="container">
- <wizard-navbar></wizard-navbar>
- <app-controls></app-controls>
- <app-surfacewelcome></app-surfacewelcome>
- <app-surfaceinfo></app-surfaceinfo>
- <app-surfacehost></app-surfacehost>
- <app-surfacephoto></app-surfacephoto>
- <app-surfacepolicy></app-surfacepolicy>
- <app-surfaceconfirm></app-surfaceconfirm>
+  <wizard-navbar></wizard-navbar>
+  <app-controls [question]="question" (notifyIncrementCounter)="myIncrementCounter($event)" (notifyDecrementCounter)="myDecrementCounter($event)"></app-controls>
+  <div [ngSwitch] = "type">
+  <app-surfacewelcome *ngSwitchCase="'0'"></app-surfacewelcome>
+  <app-surfaceinfo *ngSwitchCase="'1'"></app-surfaceinfo>
+  <app-surfacehost *ngSwitchCase="'2'"></app-surfacehost>
+  <app-surfacephoto *ngSwitchCase="'3'"></app-surfacephoto>
+  <app-surfacepolicy *ngSwitchCase="'4'"></app-surfacepolicy>
+  <app-surfaceconfirm *ngSwitchCase="'5'"></app-surfaceconfirm>
+  </div>
 </div>
-
-index - name - group - pages - current
-<ul *ngFor = "let item of customs">    
-    <li>{{item.index}} - {{item.name}} - {{item.group}} - {{item.pages}} - {{item.current}}</li>
-   
-</ul>
+<!--
+<div class="container">
+  <table>
+    <tr>
+      <th>index</th>
+      <th>name</th>
+      <th>group</th>
+      <th>pages</th>
+      <th>current</th>
+    </tr>
+    <tr *ngFor="let item of customs">
+      <td>{{item.index}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.group}}</td>
+      <td>{{item.pages}}</td>
+      <td>{{item.current}}</td>
+    </tr>
+  </table>
+</div>
+-->

@@ -22,7 +22,8 @@
 
 .middletext {
   padding-top: 25px;   
-  font-size: 1.5em;
+  font-size: 2em;
+  letter-spacing: 2px;
 }
  /* PULSE */
 @keyframes pulse {

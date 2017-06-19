@@ -1,3 +1,16 @@
-<p>
-  surfacephoto works!
-</p>
+<table class="table table-responsive borderless">
+  <tbody>
+    <tr>      
+      <td>
+        <ack-webcam [hidden]="showPicture" [(ref)]="webcam" [options]="options" (onSuccess)="onCamSuccess($event)" (onError)="onCamError($event)"></ack-webcam>
+        <img [hidden]="!showPicture" src="{{base64}}" class="cssWebCam" />
+      </td>
+      <td>
+        <button type="button" class="btn btn-success btn-circle btn-xl" (click)="CountDown()"><p>{{mycdtext}}</p></button>
+        <div [hidden]="!showPicture">
+        <button  type="button"  class="btn btn-success buttonRescale">Proceed</button>
+        </div>
+      </td>    
+    </tr>  
+  </tbody>
+</table>
