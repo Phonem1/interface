@@ -8,6 +8,7 @@
     "electron": "electron .",
     "ng": "ng",
     "start": "ng serve",
+    "c9" : "ng serve -H direct-phonemyatt.c9users.io",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
